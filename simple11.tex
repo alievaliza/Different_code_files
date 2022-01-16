@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[a4paper,left=2.5cm, right=1.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+
+\begin{document}
+\title{Пример документа LaTeX}
+\author{А.В. Тор}
+\date{\today}
+\maketitle
+
+\abstract{Здесь помещается текст аннотации.}
+
+\section{Текст}
+
+Абзацы при наборе разделяются пустой строкой. По умолчанию, TeX выровняет текст по ширине. 
+
+Шрифт бывает \textbf{полужирным}, \textit{наклонным}, \texttt{моноширинным} и ещё много каким. Размеры его изменяются от {\tiny малюсенького} до {\Huge огромного}.
+
+Мы познакомились с тем, как:
+
+\begin{itemize}
+\item набирать текст;
+\item управлять начертанием и размером шрифта;
+\item а теперь ещё и создали список.
+\end{itemize}
+
+\section{Немного математики}
+
+Формулу можно поместить внутрь текста: \( y=\sin x \) или сделать отдельным абзацем:
+
+\[
+\int_a^b x^2 dx = \left. \frac{x^3}{3} \right|_a^b .
+\]
+
+\section{Иллюстрации}
+
+Вставим рисунок и сошлёмся на него (рис.~\ref{lion})
+
+\begin{figure}[h]
+\center{\includegraphics[scale=0.5]{TeX_lion.jpg}}
+\caption{Талисман \TeX, созданный художником Дуэйном Бибби}
+\label{lion}
+\end{figure}
+
+\end{document}
